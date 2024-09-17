@@ -10,7 +10,7 @@ function App() {
     <Router>
       <div className="app-container">
         <div className="navbar">
-          <Link> Dashboard </Link>
+          <Link to="/"> Dashboard </Link>
           <SignedIn>
             <UserButton />
           </SignedIn>
