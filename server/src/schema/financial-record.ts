@@ -10,7 +10,7 @@ interface FinancialRecord {
 }
 
 const financialRecordSchema = new mongoose.Schema<FinancialRecord>({
-  userId: { type: String, required: true },
+  userId: { type: String, required: false },
   date: { type: Date, required: true },
   description: { type: String, required: true },
   amount: { type: Number, required: true },
