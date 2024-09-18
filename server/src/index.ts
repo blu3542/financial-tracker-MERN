@@ -12,7 +12,7 @@ app.use(express.json());
 // helps fix crsoss communciation between API server front end
 app.use(cors())
 
-const mongoURI: string = "mongodb+srv://btlu03:BRvKXoAnv21gr17G@personalfinancetrackerf.ezzc7.mongodb.net/";
+const mongoURI: string = process.env.MONGO_URI as string;
 
 
 mongoose.connect(mongoURI).then(() => console.log("CONNECTED TO MONGODB!")).catch((err)=>console.error("Failed to Connect", err))
